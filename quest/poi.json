@@ -4904,6 +4904,193 @@
       ]
     }
   },
+{
+"game_id": 235,
+"wiki_id": "B135",
+"category": 2,
+"type": 1,
+"name": "近海哨戒を実施せよ!",
+"detail": "哨戒任務：軽巡級1隻以上、駆逐艦または海防艦計3隻以上による艦隊で、鎮守府海域の南西諸島沖及び製油所地帯沿岸、南西諸島海域の南西諸島近海及びバシー海峡の哨戒を実施、敵を捕捉撃滅せよ！",
+"reward_fuel": 300,
+"reward_ammo": 300,
+"reward_steel": 0,
+"reward_bauxite": 0,
+"reward_other": [
+    {
+      "choices": [
+        {
+          "name": "開発資材",
+          "amount": 3
+        },
+        {
+          "name": "高速修復材",
+          "amount": 3
+        },
+        {
+          "name": "25mm三連装機銃",
+          "amount": 2
+        }
+      ]
+    },
+    {
+         "name": "戦闘詳報",
+         "amount": 1
+    }
+  ],
+"prerequisite": [],
+"requirements": {
+  "category": "and",
+  "times": 1,
+  "map": [
+    "1-2",
+    "1-3",
+    "2-1",
+    "2-2"
+  ],
+  "boss": true,
+  "result": "s",
+  "groups": [
+    {
+      "ship": "軽巡",
+      "flagship": true
+      "amount": 1
+    },
+    {
+      "ship": [
+        "駆逐",
+        "海防艦"
+      ],
+      "amount": 2
+    }
+  ]
+}
+},  
+{
+"game_id": 236,
+"wiki_id": "B136",
+"category": 2,
+"type": 1,
+"name": "精鋭'二四駆逐隊'出撃せよ！",
+"detail": "二四駆出撃任務：「海風改二」を旗艦とし、「山風」「江風」「涼風」のうち2隻以上を含む艦隊を編成、東部オリョール海、沖ノ島海域、南方海域前面、サブ島沖海域に突入！敵艦隊を捕捉、撃滅せよ！",
+"reward_fuel": 800,
+"reward_ammo": 800,
+"reward_steel": 800,
+"reward_bauxite": 0,
+"reward_other": [
+    {
+      "choices": [
+        {
+        "name": "新型砲熕兵装資材",
+        "amount": 1
+        },
+        {
+        "name": "13号対空電探",
+        "amount": 3
+        },
+        {
+        "name": "特注家具職人",
+        "amount": 1
+        }
+      ]
+    },
+    {
+         "name": "12.7cm連装砲C型改二",
+         "amount": 1
+    }
+  ],
+"prerequisite": [235,273],
+"requirements": {
+  "category": "and",
+  "times": 1,
+  "map": [
+    "2-3",
+    "2-4",
+    "5-1",
+    "5-3"
+  ],
+  "boss": true,
+  "result": "s",
+  "groups": [
+    {
+    "ship": "海風改二",
+    "flagship": true
+    },
+    {
+      "ship": [
+     "山風",
+     "江風",
+     "涼風"
+    ],
+      "select": 2
+    }
+  ]
+}
+},
+{
+  "game_id": 237,
+  "wiki_id": "B138",
+  "category": 2,
+  "type": 1,
+  "name": "「羽黒」「神風」、出撃せよ！",
+  "detail": "第五戦隊任務：「羽黒」「神風」を基幹として、他に重巡級1隻駆逐艦2隻、または駆逐艦4隻の艦隊で南西諸島近海、バシー海峡、東部オリョール海に出撃、敵艦隊と交戦、これを撃滅せよ！",
+  "reward_fuel": 516,
+  "reward_ammo": 0,
+  "reward_steel": 1945,
+  "reward_bauxite": 0,
+  "reward_other": [
+      {
+        "choices": [
+          {
+          "name": "補強増設",
+          "amount": 1
+          
+          },
+          {
+          "name": "新型航空兵装資材",
+          "amount": 1
+          },
+          {
+          "name": "特注家具職人",
+          "amount": 1
+          }
+        ]
+      },
+      {
+      "name": "「羽黒の護り」掛け軸",
+      "category": "家具"
+      }
+    ],
+  "prerequisite": [235],
+  "requirements": {
+{
+      "category": "and",
+      "times": 1,
+      "map": [
+              "2-1",
+              "2-2",
+              "2-3"
+              ],
+      "boss": true,
+      "result": "S",
+      "groups": [
+        {
+        "ship": "羽黒"
+        },
+        {
+        "ship": "神風"
+        },
+        {
+          "ship": ["重巡","航空巡洋艦"],["駆逐"],             
+          "amount": [1],[3]
+        },
+        {
+          "ship": "駆逐",
+          "amount": 4
+        }
+      ]
+    }
+  }
+},
   {
     "game_id": 239,
     "wiki_id": "B20",
@@ -6924,6 +7111,87 @@
       ]
     }
   },
+{
+  "game_id": 283,
+  "wiki_id": "B137",
+  "category": 2,
+  "type": 1,
+  "name": "精強！'第一航空戦隊'出撃せよ！",
+  "detail": "第一艦隊旗艦「赤城改二(改二戊)」同二番艦「加賀」の第一航空戦隊を中核とした艦隊で、カレー洋リランカ島沖、珊瑚諸島沖に展開！さらにKW環礁沖海域に反復出撃！鎧袖一触！敵を粉砕せよ！",
+  "reward_fuel": 800,
+  "reward_ammo": 800,
+  "reward_steel": 800,
+  "reward_bauxite": 0,
+  "reward_other": [
+      {
+        "choices": [
+          {
+          "name": "改修資材",
+          "amount": 5
+          
+          },
+          {
+          "name": "新型航空兵装資材",
+          "amount": 1
+          },
+          {
+          "name": "熟練搭乗員",
+          "amount": 1
+          }
+        ]
+      },
+      {
+           "name": "流星改(一航戦)",
+           "amount": 1
+      }
+    ],
+  "prerequisite": [272,333],
+  "requirements": {
+  "category": "and",
+  "list": [
+    {
+      "category": "sortie",
+      "times": 1,
+      "map": [
+              "4-5",
+              "5-2"
+              ],
+      "boss": true,
+      "result": "S",
+      "groups": [
+        {
+          "ship": ["赤城改二",
+                  "赤城改二戊"],
+          "flagship": true
+        },
+        {
+          "ship": ["加賀",
+                  "加賀改"],
+                  "place": 2
+        }
+      ]
+    },
+    {
+      "category": "sortie",
+      "times": 2,
+      "map": "6-5",
+      "boss": true,
+      "result": "S",
+      "groups": [
+        {
+          "ship": ["赤城改二",
+                  "赤城改二戊"],
+          "flagship": true
+        },
+        {
+          "ship": ["加賀",
+                  "加賀改"],
+                  "place": 2
+        }
+      ]
+    }
+  }
+},
   {
     "game_id": 285,
     "wiki_id": "B49",
@@ -7189,6 +7457,132 @@
       ]
     }
   },
+{
+  "game_id": 291,
+  "wiki_id": "B134",
+  "category": 2,
+  "type": 1,
+  "name": "艦隊司令部の強化 【実施段階】",
+  "detail": "艦隊司令部強化：「大淀」を旗艦、随伴艦に「明石」または水上機母艦を含む艦隊を編成、同艦隊で東部オリョール海、アルフォンシーノ方面、西方ジャム島沖に反復出撃、敵艦隊を捕捉撃滅せよ！",
+  "reward_fuel": 1200,
+  "reward_ammo": 1200,
+  "reward_steel": 1200,
+  "reward_bauxite": 0,
+  "reward_other": [
+      {
+        "choices": [
+          {
+          "name": "家具箱（大）",
+          "amount": 8
+          
+          },
+          {
+          "name": "補強増設",
+          "amount": 1
+          },
+          {
+          "name": "勲章",
+          "amount": 1
+          }
+        ]
+      },
+      {
+           "name": "司令部要員",
+           "amount": 1
+      }
+    ],
+  "prerequisite": [431],
+  "requirements": {
+  "category": "and",
+  "times": 2,
+  "map": [
+          "2-3",
+          "3-3",
+          "4-1"
+          ],
+      "boss": true,
+      "result": "S",
+      "groups": [
+        {
+          "ship": "大淀",
+          "flagship": true
+        },
+        {
+          "ship": ["明石","水上機母艦"],
+        }
+        {
+          "ship": "艦",
+          "amount": 4
+        }
+      ]
+    }
+},
+{
+  "game_id": 292,
+  "wiki_id": "B133",
+  "category": 2,
+  "type": 1,
+  "name": "重改装高速戦艦「金剛改二丙」、南方突入！",
+  "detail": "南方海域出撃任務：「金剛改二丙」を旗艦、随伴艦に金剛型1隻、駆逐艦2隻以上を含む艦隊で、南方海域前面、サブ島沖海域、サーモン海域、同海域北方に反復突入、各海域の敵を撃滅せよ！",
+  "reward_fuel": 1944,
+  "reward_ammo": 2019,
+  "reward_steel": 0,
+  "reward_bauxite": 0,
+  "reward_other": [
+      {
+        "choices": [
+          {
+          "name": "新型砲熕兵装資材",
+          "amount": 2
+          
+          },
+          {
+          "name": "戦闘詳報",
+          "amount": 1
+          },
+          {
+          "name": "勲章",
+          "amount": 1
+          }
+        ]
+      },
+      {
+           "name": "35.6cm連装砲改二",
+           "amount": 1
+      }
+    ],
+  "prerequisite": [290],
+  "requirements": {
+  "category": "and",
+  "times": 2,
+  "map": [
+          "5-1",
+          "5-3",
+          "5-4",
+          "5-5",
+          ],
+      "boss": true,
+      "result": "S",
+      "groups": [
+        {
+          "ship": "金剛改二丙",
+          "flagship": true
+        },
+        {
+          "ship": [
+                  "比叡",
+                  "榛名",
+                  "霧島"
+                  ],
+          "select": 1
+        }
+        {
+          "ship": "駆逐",
+          "amount": 2
+        }
+      ]
+    }
+},
   {
     "game_id": 293,
     "wiki_id": "B53",
@@ -14931,6 +15325,53 @@
       "times": 1
     }
   },
+{
+  "game_id": 833,
+  "wiki_id": "B139",
+  "category": 2,
+  "type": 1,
+  "name": "陸戦用装備の艦載運用実戦研究",
+  "detail": "陸戦用装備の艦載運用研究：水上機母艦または揚陸艦を含む艦隊を編成、西方海域カレー洋リランカ島沖及び中部北海域ピーコック島沖の各作戦において、敵地上戦力と交戦、これを複数回撃破せよ！",
+  "reward_fuel": 1944,
+  "reward_ammo": 2019,
+  "reward_steel": 0,
+  "reward_bauxite": 0,
+  "reward_other": [
+      {
+        "choices": [
+          {
+          "name": "二式12cm迫撃砲改",
+          "amount": 1
+          },
+          {
+          "name": "艦載型 四式20cm対地噴進砲",
+          "amount": 1
+          }
+        ]
+      },
+    ],
+  "prerequisite": [621,828],
+  "requirements": {
+  "category": "and",
+  "times": 2,
+  "map": [
+          "4-5",
+          "6-4",
+          ],
+      "boss": true,
+      "result": "S",
+      "groups": [
+        {
+          "ship": ["水上機母艦","揚陸艦"]
+          "amount": 1
+        },
+        {
+          "ship": "艦",
+          "amount": 5
+        }
+      ]
+    }
+},
   {
     "game_id": 834,
     "wiki_id": "B83",
